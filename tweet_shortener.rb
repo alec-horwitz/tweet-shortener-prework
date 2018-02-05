@@ -16,7 +16,7 @@ def lookup(word)
 end
 def word_substituter(string)
 
-  newString = []
+  newString = Array.new
   string.split(" ").each {|item|
     replacement = lookup(item)
     replacement != nil ? newString.push(replacement) : newString.push(item)
