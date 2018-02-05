@@ -15,12 +15,11 @@ def lookup(word)
   dict[word]
 end
 def word_substituter(string)
-  newString = string.split(" ")
-  newString.each {|item|
+  
+  newString = []
+  string.split(" ").each {|item|
     replacement = lookup(item)
-    if replacement != nil
-      item = replacement
-    end
+    replacement != nil ? newString.push(replacement) : newString.push(item)
   }
   newString.join(" ")
   newString
