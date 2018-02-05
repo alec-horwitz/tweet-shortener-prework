@@ -15,7 +15,6 @@ def lookup(word)
   dict[word]
 end
 def word_substituter(string)
-
   newString = Array.new
   string.split(" ").each {|item|
     replacement = lookup(item)
