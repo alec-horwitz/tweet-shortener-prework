@@ -12,7 +12,7 @@ def lookup(word)
     "at" => "@",
     "and" => "&"
   }
-  dict[word.lower]
+  dict[word.downcase]
 end
 
 def word_substituter(string)
