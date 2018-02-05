@@ -23,4 +23,5 @@ def word_substituter(string)
     end
   }
   newString.join(" ")
+  newString
 end
