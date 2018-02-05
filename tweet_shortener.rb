@@ -22,4 +22,5 @@ def word_substituter(string)
       item = replacement
     end
   }
+  newString.join(" ")
 end
