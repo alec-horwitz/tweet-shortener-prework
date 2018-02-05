@@ -14,6 +14,7 @@ def lookup(word)
   }
   dict[word]
 end
+
 def word_substituter(string)
   newString = Array.new
   string.split(" ").each {|item|
@@ -21,4 +22,10 @@ def word_substituter(string)
     replacement != nil ? newString.push(replacement) : newString.push(item)
   }
   newString = newString.join(" ")
+end
+
+def bulk_tweet_shortener(arrayOfStrings)
+  arrayOfStrings.each {|string|
+    puts word_substituter(string)
+  }
 end
