@@ -22,5 +22,4 @@ def word_substituter(string)
     replacement != nil ? newString.push(replacement) : newString.push(item)
   }
   newString = newString.join(" ")
-
 end
