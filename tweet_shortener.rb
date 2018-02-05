@@ -21,6 +21,6 @@ def word_substituter(string)
     replacement = lookup(item)
     replacement != nil ? newString.push(replacement) : newString.push(item)
   }
-  newString.join(" ")
-  newString
+  newString = newString.join(" ")
+
 end
